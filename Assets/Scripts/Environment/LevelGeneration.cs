@@ -5,7 +5,7 @@
 //public class LevelGeneration : MonoBehaviour
 //{
 //    public GameObject[] Section;
-//    public int zpos = 50;
+//    public int zpos = 150;
 //    public bool creatingSection = false;
 //    public int secNum;
 
@@ -79,7 +79,7 @@ public class LevelGeneration : MonoBehaviour
             activeSections.RemoveAt(0);
         }
 
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(10);
         creatingSection = false;
     }
 }

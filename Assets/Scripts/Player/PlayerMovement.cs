@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 3;
-    public float leftRightSpeed = 2;
+    public float moveSpeed;
+    public float leftRightSpeed;
     // Update is called once per frame
     void Update()
     {

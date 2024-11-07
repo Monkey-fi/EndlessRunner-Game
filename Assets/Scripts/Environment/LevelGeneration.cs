@@ -36,7 +36,7 @@
 //}
 
 
-// with deketion of previous platform
+// with detetion of previous platform
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,7 +47,7 @@ public class LevelGeneration : MonoBehaviour
     public int zpos = 150;
     public bool creatingSection = false;
     public int secNum;
-    public int maxSections = 8; // Set the maximum number of sections to keep active
+    public int maxSections = 10; // Set the maximum number of sections to keep active
     private List<GameObject> activeSections = new List<GameObject>();
 
     // Update is called once per frame
@@ -79,7 +79,7 @@ public class LevelGeneration : MonoBehaviour
             activeSections.RemoveAt(0);
         }
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         creatingSection = false;
     }
 }
